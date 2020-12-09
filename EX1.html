@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="camisetaP" type="number" placeholder="camisetas pequenas"/>
+    <input id="camisetaM" type="number" placeholder=" camisetas medias"/>
+    <input id="camisetaG" type="number" placeholder="camisetas grandes"/>
+   
+
+    <button onclick="Calcular()">Calcular Total</button>
+
+
+    <script>
+
+        
+
+     function Calcular(){
+        var camisetaP = 10;
+        var camisetaM = 12;
+        var camisetaG = 15;
+
+        var quantidadeCamisetaP = parseInt(document.getElementById("camisetaP").value);
+        var quantidadeCamisetaM = parseInt(document.getElementById("camisetaM").value);
+        var quantidadeCamisetaG = parseInt(document.getElementById("camisetaG").value); 
+
+         var totalP = camisetaP * quantidadeCamisetaP
+         var totalM = camisetaM * quantidadeCamisetaM
+         var totalG = camisetaG * quantidadeCamisetaG
+        var total = totalP + totalM + totalG
+        alert(`O total a pagar é de ${total} reais`)
+        
+     }
+        
+    </script>
+</body>
+</html>
